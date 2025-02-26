@@ -5,6 +5,13 @@ import { useState } from 'react'
 import Nav from './components/Nav'
 import Footer from './components/footer'
 import Login from './components/Login'
+import Gallery from './components/Gallery'
+import Features from './components/Features'
+import About from './components/About'
+import Experience from './components/Experience'
+import Hero from './components/Hero'
+
+
 
 
 
@@ -14,8 +21,14 @@ function App() {
   return (
     <>
       <Nav/>
+      <Hero/>
+      <Experience/>
+      <About/>
+      <Features/>
+      <Gallery/>
       <Login/>
       <Footer/>
+
     </>
       
     
