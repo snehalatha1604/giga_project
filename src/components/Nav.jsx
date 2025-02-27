@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from 'react'
 import { FaPhone } from "react-icons/fa";
 import { IoLocationSharp } from "react-icons/io5";
@@ -32,11 +33,11 @@ const Nav = () => {
 
         {/* Nav Links */}
         <div className="flex space-x-6 text-gray-700 font-medium">
-          <a href="#" className="text-green-500">HOME</a>
-          <a href="#">ABOUT</a>
-          <a href="#">SERVICE</a>
-          <a href="#">BUSINESS ASSOCIATES</a>
-          <a href="#">CONTACT</a>
+          <Link to="/" className="text-green-500">HOME</Link>
+          <Link to="/about">ABOUT</Link>
+          <Link to="/service">SERVICE</Link>
+          <Link to="/bussiness">BUSINESS ASSOCIATES</Link>
+          <Link to="/contact">CONTACT</Link>
         </div>
 
         {/* Quote Button */}
