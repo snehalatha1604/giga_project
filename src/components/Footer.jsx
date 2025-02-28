@@ -1,5 +1,6 @@
-import React from 'react'
+import React from "react";
 import { FaPhone, FaMapMarkerAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -22,9 +23,21 @@ const Footer = () => {
         <div>
           <h2 className="text-lg font-semibold mb-4">Quick Links</h2>
           <ul>
-            <li className="mb-2"><a href="#" className="hover:text-green-400">➤ About Us</a></li>
-            <li className="mb-2"><a href="#" className="hover:text-green-400">➤ Contact Us</a></li>
-            <li><a href="#" className="hover:text-green-400">➤ Our Services</a></li>
+            <li className="mb-2">
+              <a href="/about" className="hover:text-green-400">
+                ➤ About Us
+              </a>
+            </li>
+            <li className="mb-2">
+              <a href="/contact" className="hover:text-green-400">
+                ➤ Contact Us
+              </a>
+            </li>
+            <li>
+              <a href="/service" className="hover:text-green-400">
+                ➤ Our Services
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -32,30 +45,57 @@ const Footer = () => {
         <div>
           <h2 className="text-lg font-semibold mb-4">Project Gallery</h2>
           <div className=" flex flex-wrap gap-2 w-64 ">
-            <img src="/solarimg1.jpg" alt="Project 1" className="w-20 h-14 object-cover rounded" />
-            <img src="/solarimg5.jpg" alt="Project 2" className="w-20 h-14 object-cover rounded" />
-            <img src="/solarimg6.jpg" alt="Project 3" className="w-20 h-14 object-cover rounded" />
-            <img src="/solarimg10.jpg" alt="Project 4" className="w-20 h-14 object-cover rounded" />
-            <img src="/solarimg8.jpg" alt="Project 5" className="w-20 h-14 object-cover rounded" />
-            <img src="/solarimg7.jpg" alt="Project 6" className="w-20 h-14 object-cover rounded" />
+            <img
+              src="/solarimg1.jpg"
+              alt="Project 1"
+              className="w-20 h-14 object-cover rounded"
+            />
+            <img
+              src="/solarimg5.jpg"
+              alt="Project 2"
+              className="w-20 h-14 object-cover rounded"
+            />
+            <img
+              src="/solarimg6.jpg"
+              alt="Project 3"
+              className="w-20 h-14 object-cover rounded"
+            />
+            <img
+              src="/solarimg10.jpg"
+              alt="Project 4"
+              className="w-20 h-14 object-cover rounded"
+            />
+            <img
+              src="/solarimg8.jpg"
+              alt="Project 5"
+              className="w-20 h-14 object-cover rounded"
+            />
+            <img
+              src="/solarimg7.jpg"
+              alt="Project 6"
+              className="w-20 h-14 object-cover rounded"
+            />
           </div>
         </div>
       </div>
 
       {/* Bottom Bar */}
       <div className="mt-10 text-left border-t border-gray-700 pt-4">
-        <p>© <span className="text-green-400">M/S GIGA POWER</span>, All Rights Reserved.</p>
+        <p>
+          © <span className="text-green-400">M/S GIGA POWER</span>, All Rights
+          Reserved.
+        </p>
       </div>
 
       {/* Scroll to Top Button */}
-      <button 
+      <button
         className="fixed bottom-5 right-5 bg-green-500 text-white w-12 h-12 flex items-center justify-center rounded-full shadow-lg hover:bg-green-600 transition duration-300"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
         ↑
       </button>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

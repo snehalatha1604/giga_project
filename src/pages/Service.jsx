@@ -183,7 +183,7 @@ const Service = () => {
         {/* Right Image */}
         <div className="w-1/2">
           <img
-            src="feature.jpg"
+            src="/feature.jpg"
             alt="Solar Panels"
             className="w-full rounded-lg shadow-lg"
           />
