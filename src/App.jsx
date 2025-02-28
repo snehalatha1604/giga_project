@@ -32,7 +32,7 @@ function App() {
 
   return (
     <>
-      <Nav />
+      <Nav active="home" />
       <Swiper
         modules={[Navigation, Autoplay]}
         navigation

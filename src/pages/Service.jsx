@@ -63,7 +63,7 @@ const Service = () => {
   const aboutUsImage1 = "/solarimg1.jpg";
   return (
     <>
-      <Nav />
+      <Nav active="Service" />
       <div
         className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] bg-cover bg-center flex items-center"
         style={{ backgroundImage: `url(${aboutUsImage1})` }}

@@ -6,7 +6,7 @@ const Contact = () => {
   const aboutUsImage1 = "/carousel-2.jpg";
   return (
     <>
-      <Nav />
+      <Nav active="Contact" />
       <div
         className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] bg-cover bg-center flex items-center"
         style={{ backgroundImage: `url(${aboutUsImage1})` }}
